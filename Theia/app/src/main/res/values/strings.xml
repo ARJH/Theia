@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Theia</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="label_no_navigation_data">No navigation data</string>
 </resources>
