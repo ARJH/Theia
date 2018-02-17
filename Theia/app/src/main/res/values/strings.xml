@@ -13,4 +13,5 @@
     <string name="label_button_call_relative">Call a relative</string>
     <string name="label_button_scan_people">Scan for people nearby</string>
     <string name="label_button_emergency_call">Emergency call</string>
+    <string name="label_text_view_welcome_to">Welcome to %s!</string>
 </resources>

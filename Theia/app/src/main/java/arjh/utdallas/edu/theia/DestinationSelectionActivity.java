@@ -20,6 +20,9 @@ public class DestinationSelectionActivity extends BasicMenuActivity {
         setContentView(R.layout.activity_destination_selection);
         setUpActionBar();
 
+        ((TextView) findViewById(R.id.text_view_welcome_to))
+                .setText(getString(R.string.label_text_view_welcome_to, "JSOM Building"));
+
         ListView destinationsListView = findViewById(R.id.list_view_destinations);
 
         destinationsListView.setAdapter(
