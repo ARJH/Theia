@@ -1,11 +1,13 @@
 package arjh.utdallas.edu.theia.basics.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import arjh.utdallas.edu.theia.AssistanceActivity;
 import arjh.utdallas.edu.theia.R;
 
 /**
@@ -26,6 +28,8 @@ public abstract class BasicMenuActivity extends AppCompatActivity {
                     getString(R.string.toast_you_are_at, "Floor 2, Room 2.801"),
                     Toast.LENGTH_SHORT)
                     .show();
+        } else if (item.getItemId() == R.id.menu_item_people_around_me) {
+            startActivity(new Intent(this, AssistanceActivity.class));
         }
 
         return super.onOptionsItemSelected(item);

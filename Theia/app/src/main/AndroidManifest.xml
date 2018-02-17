@@ -32,6 +32,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="arjh.utdallas.edu.theia.DestinationSelectionActivity" />
         </activity>
+        <activity
+            android:name=".AssistanceActivity"
+            android:label="@string/title_activity_people_around_me"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
