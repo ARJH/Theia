@@ -3,4 +3,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="label_no_navigation_data">No navigation data</string>
     <string name="title_activity_destination_selection">Destinations</string>
+    <string name="label_menu_item_where_am_i">Where am I</string>
+    <string name="toast_you_are_at">You are at %s</string>
 </resources>
