@@ -22,7 +22,16 @@
         <activity
             android:name=".DestinationSelectionActivity"
             android:label="@string/title_activity_destination_selection"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DirectionsActivity"
+            android:label="@string/title_activity_directions"
+            android:parentActivityName=".DestinationSelectionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="arjh.utdallas.edu.theia.DestinationSelectionActivity" />
+        </activity>
     </application>
 
 </manifest>

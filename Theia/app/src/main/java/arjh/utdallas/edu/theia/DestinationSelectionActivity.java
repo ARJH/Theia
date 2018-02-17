@@ -1,9 +1,12 @@
 package arjh.utdallas.edu.theia;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.Arrays;
 
@@ -15,8 +18,7 @@ public class DestinationSelectionActivity extends BasicMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destination_selection);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setUpActionBar();
 
         ListView destinationsListView = findViewById(R.id.list_view_destinations);
 
@@ -24,5 +26,19 @@ public class DestinationSelectionActivity extends BasicMenuActivity {
                 new ArrayAdapter<>(this,
                         android.R.layout.simple_list_item_1,
                         Arrays.asList("Restroom", "Drinking Fountain", "Elevator", "Exit")));
+
+        destinationsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                DestinationSelectionActivity activity = DestinationSelectionActivity.this;
+                CharSequence destinationName = ((TextView) view).getText();
+
+                Intent intent = new Intent(activity, DirectionsActivity.class);
+                intent.putExtra(DirectionsActivity.EXTRA_DESTINATION_NAME, destinationName);
+
+                activity.startActivity(intent);
+            }
+        });
     }
+
 }
