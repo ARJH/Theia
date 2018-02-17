@@ -10,9 +10,9 @@ public class AssistanceActivity extends BasicMenuActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
 
-        if (result && menu.findItem(R.id.menu_item_people_around_me) != null) {
+        if (result && menu.findItem(R.id.menu_item_assistance) != null) {
             // We are already in this activity
-            menu.removeItem(R.id.menu_item_people_around_me);
+            menu.removeItem(R.id.menu_item_assistance);
         }
 
         return result;

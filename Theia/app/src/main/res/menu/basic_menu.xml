@@ -8,8 +8,8 @@
         android:title="@string/label_menu_item_where_am_i"
         app:showAsAction="always" />
     <item
-        android:id="@+id/menu_item_people_around_me"
+        android:id="@+id/menu_item_assistance"
         android:icon="@drawable/people"
-        android:title="@string/label_menu_item_people_around_me"
+        android:title="@string/label_menu_item_assistance"
         app:showAsAction="ifRoom" />
 </menu>

@@ -28,7 +28,7 @@ public abstract class BasicMenuActivity extends AppCompatActivity {
                     getString(R.string.toast_you_are_at, "Floor 2, Room 2.801"),
                     Toast.LENGTH_SHORT)
                     .show();
-        } else if (item.getItemId() == R.id.menu_item_people_around_me) {
+        } else if (item.getItemId() == R.id.menu_item_assistance) {
             startActivity(new Intent(this, AssistanceActivity.class));
         }
 
