@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        handler.postDelayed(action, 5000);
+        handler.postDelayed(action, 10000);
     }
 
     @Override

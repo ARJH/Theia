@@ -74,7 +74,7 @@ public class DirectionsActivity extends BasicMenuActivity {
             System.out.println(count);
             for (int i = 0; i < count; i++) {
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
