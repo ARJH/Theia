@@ -10,7 +10,7 @@
     <string name="label_menu_item_assistance">Assistance</string>
     <string name="title_activity_assistance">Assistance</string>
     <string name="label_button_call_police">Call police</string>
-    <string name="label_button_call_relative">Call a relative</string>
+    <string name="label_button_call_volunteer">Call a volunteer</string>
     <string name="label_button_scan_people">Scan for people nearby</string>
     <string name="label_button_emergency_call">Emergency call</string>
     <string name="label_text_view_welcome_to">Welcome to %s!</string>
