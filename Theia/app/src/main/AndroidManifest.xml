@@ -36,6 +36,10 @@
             android:name=".AssistanceActivity"
             android:label="@string/title_activity_assistance"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddVolunteerActivity"
+            android:label="@string/title_activity_add_volunteer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

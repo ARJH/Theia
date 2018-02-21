@@ -27,6 +27,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
+        android:onClick="onButtonCallVolunteerClicked"
         android:text="@string/label_button_call_volunteer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

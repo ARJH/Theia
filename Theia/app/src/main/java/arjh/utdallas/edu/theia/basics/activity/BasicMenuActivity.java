@@ -18,7 +18,20 @@ public abstract class BasicMenuActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.basic_menu, menu);
 
+        int[] excludeMenuIDs = getExcludeMenuIDs();
+        if (excludeMenuIDs != null) {
+            for (int excludeID : excludeMenuIDs) {
+                if (menu.findItem(excludeID) != null) {
+                    menu.removeItem(excludeID);
+                }
+            }
+        }
+
         return true;
+    }
+
+    protected int[] getExcludeMenuIDs() {
+        return null;
     }
 
     @Override
