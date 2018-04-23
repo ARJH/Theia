@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,28 +72,25 @@ public class DirectionsActivity extends BasicMenuActivity {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            int count = listView.getAdapter().getCount();
-            System.out.println(count);
-            for (int i = 0; i < count; i++) {
+            ListAdapter adapter = listView.getAdapter();
+            while (adapter.getCount() > 0) {
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(7000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 publishProgress();
             }
+
             return null;
         }
 
         @Override
         protected void onProgressUpdate(Void... values) {
-            try {
-                ArrayAdapter<String> adapter = (ArrayAdapter<String>) listView.getAdapter();
-                String item = adapter.getItem(0);
-                adapter.remove(item);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            ArrayAdapter<String> adapter = (ArrayAdapter<String>) listView.getAdapter();
+            String item = adapter.getItem(0);
+            adapter.remove(item);
+            Toast.makeText(listView.getContext(), item, Toast.LENGTH_SHORT).show();
         }
     }
 
